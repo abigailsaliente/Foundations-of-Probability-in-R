@@ -1,0 +1,5 @@
+# Calculate the probability that 2 are heads using dbinom
+dbinom(2, 10, .3)
+
+# Confirm your answer with a simulation using rbinom
+mean(rbinom(10000, 10, .3) == 2)
