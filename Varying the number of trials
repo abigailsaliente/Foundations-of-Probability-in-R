@@ -1,0 +1,16 @@
+#In the last exercise you tried flipping ten coins with a 30% probability of heads to find the 
+probability at least five are heads. You found that the exact answer was 1 - pbinom(4, 10, .3) = 0.1502683,
+then confirmed with 10,000 simulated trials. Did you need all 10,000 trials to get an accurate answer?
+Would your answer have been more accurate with more trials?
+
+
+
+# Here is how you computed the answer in the last problem
+mean(rbinom(10000, 10, .3) >= 5)
+
+# Try now with 100, 1000, 10,000, and 100,000 trials
+mean(rbinom(100, 10, .3) >= 5)
+mean(rbinom(1000, 10, .3) >= 5)
+mean(rbinom(10000, 10, .3) >= 5)
+mean(rbinom(100000, 10, .3) >= 5)
+
