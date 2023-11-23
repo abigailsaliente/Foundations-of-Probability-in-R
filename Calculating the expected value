@@ -1,0 +1,12 @@
+#What is the expected value of a binomial distribution where 25 coins are flipped, each having a 30% chance of heads?
+
+# Calculate the expected value using the exact formula
+flips <- rbinom(10000,25,3)
+
+# Confirm with a simulation using rbinom
+mean(rbinom(10000,25,.3))
+
+
+
+
+[1] 7.5077
