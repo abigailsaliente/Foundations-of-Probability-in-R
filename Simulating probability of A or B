@@ -6,3 +6,5 @@ B <- rbinom(100000, 1, .1)
 
 # Estimate the probability either A or B is heads
 mean(A | B)
+
+[1] 0.64045
