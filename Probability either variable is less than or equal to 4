@@ -1,0 +1,15 @@
+# Use rbinom to simulate 100,000 draws from each of X and Y
+X <- rbinom(100000, 10, .6)
+Y <- rbinom(100000, 10, .7)
+
+# Estimate the probability either X or Y is <= to 4
+mean(X <= 4 | Y <= 4)
+
+# Use pbinom to calculate the probabilities separately
+prob_X_less <- pbinom(4, 10, .6)
+prob_Y_less <- pbinom(4, 10, .7)
+
+# Combine these to calculate the exact probability either <= 4
+prob_X_less + prob_Y_less - prob_X_less * prob_Y_less
+
+[1] 0.2057164
