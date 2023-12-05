@@ -1,0 +1,14 @@
+# Randomly simulate 100,000 flips of A (40% chance), B (20% chance), and C (70% chance). What fraction of the time do all three coins come up heads?
+
+
+# You've already simulated 100,000 flips of coins A and B
+A <- rbinom(100000, 1, .4)
+B <- rbinom(100000, 1, .2)
+
+# Simulate 100,000 flips of coin C (70% chance of heads)
+C <- rbinom(100000, 1, .7)
+
+# Estimate the probability A, B, and C are all heads
+mean(A & B & C)
+
+[1] 0.05807
