@@ -1,0 +1,8 @@
+# Use dbinom to calculate the probability of 11/20 heads with fair or biased coin
+probability_fair <- dbinom(11, 20, .5)
+probability_biased <- dbinom(11, 20, .75)
+
+# Calculate the posterior probability that the coin is fair
+probability_fair / (probability_fair + probability_biased)
+
+[1] 0.8554755
