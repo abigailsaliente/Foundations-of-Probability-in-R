@@ -1,0 +1,6 @@
+# Simulate 100,000 draws of X (size 20, p = .3) and Y (size 40, p = .1)
+X <- rbinom(100000, 20, .3)
+Y <- rbinom(100000, 40, .1)
+
+# Estimate the expected value of X + Y
+mean(X+Y)
