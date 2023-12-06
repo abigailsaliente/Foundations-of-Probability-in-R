@@ -1,0 +1,9 @@
+# Simulation from last exercise of 100,000 draws from X and Y
+X <- rbinom(100000, 20, .3) 
+Y <- rbinom(100000, 40, .1)
+
+# Find the variance of X + Y
+var(X+Y)
+
+# Find the variance of 3 * X + Y
+var(3*X+Y)
