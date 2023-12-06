@@ -1,0 +1,12 @@
+# Simulate 8000 cases of flipping a fair coin, and 2000 of a biased coin
+fair_flips <- rbinom(8000, 20, .5)
+biased_flips <- rbinom(2000, 20, .75)
+
+# Find the number of cases from each coin that resulted in 14/20
+fair_14 <- sum(fair_flips == 14)
+biased_14 <- sum(biased_flips == 14)
+
+# Use these to estimate the posterior probability
+fair_14 / (fair_14 + biased_14)
+
+[1] 0.4944
