@@ -1,0 +1,13 @@
+# X is simulated from 100,000 draws of a binomial with size 20 and p = .1
+X <- rbinom(100000, 20, .1)
+
+# Estimate the variance of X
+var(X)
+
+[1] 1.81208
+
+
+# Estimate the variance of 5 * X
+var(5*X)
+
+[1] 45.302
