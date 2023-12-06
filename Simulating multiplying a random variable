@@ -1,0 +1,13 @@
+# Simulate 100,000 draws of a binomial with size 20 and p = .1
+X <- rbinom(100000, 20, .1)
+
+# Estimate the expected value of X
+mean(X)
+
+[1] 1.99633
+
+
+# Estimate the expected value of 5 * X
+mean(5*X)
+
+[1] 9.98165
