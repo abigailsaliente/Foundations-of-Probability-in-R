@@ -1,6 +1,9 @@
 # Find the probability that a coin resulting in 14/20 is fair
 dbinom(14, 20, .5) / (dbinom(14, 20, .5) + dbinom(14, 20, .75))
 
+[1] 0.179811
+
+
 # Find the probability that a coin resulting in 18/20 is fair
 dbinom(18, 20, .5) / (dbinom(18, 20, .5) + dbinom(18, 20, .75))
 
