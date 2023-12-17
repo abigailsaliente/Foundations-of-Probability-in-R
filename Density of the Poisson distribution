@@ -1,0 +1,13 @@
+# Simulate 100,000 draws from Poisson(2)
+poisson_sample <- rpois(100000, 2)
+
+# Find the percentage of simulated values that are 0
+mean(poisson_sample == 0)
+
+[1] 0.13613
+
+
+# Use dpois to find the exact probability that a draw is 0
+dpois(0, 2)
+
+[1] 0.1353353
