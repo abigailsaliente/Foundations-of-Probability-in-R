@@ -1,0 +1,8 @@
+# Draw a random sample of 100,000 from the Binomial(1000, .2) distribution
+binom_sample <- rbinom(100000, 1000, .2)
+
+# Draw a random sample of 100,000 from the normal approximation
+normal_sample <- rnorm(100000, 200, sqrt(160))
+
+# Compare the two distributions with the compare_histograms function
+compare_histograms(binom_sample, normal_sample)
