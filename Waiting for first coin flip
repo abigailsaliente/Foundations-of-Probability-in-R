@@ -1,0 +1,7 @@
+# Simulate 100 instances of flipping a 20% coin
+flips <- rbinom(100,1, .2)
+
+# Use which to find the first case of 1 ("heads")
+which(flips ==1)[1]
+
+[1] 4
