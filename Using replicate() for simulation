@@ -1,0 +1,8 @@
+# Existing code for finding the first instance of heads
+which(rbinom(100, 1, 0.2) == 1)[1]
+
+# Replicate this 100,000 times using replicate()
+replications <- replicate(100000, which(rbinom(100, 1, 0.2) == 1)[1])
+
+# Histogram the replications with qplot
+qplot(replications)
