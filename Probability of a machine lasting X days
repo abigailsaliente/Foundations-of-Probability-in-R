@@ -1,0 +1,10 @@
+# Find the probability the machine breaks on 5th day or earlier
+pgeom(4, .1)
+
+[1] 0.40951
+
+
+# Find the probability the machine is still working on 20th day
+1 - pgeom(19, .1)
+
+[1] 0.1215767
